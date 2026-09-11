@@ -1,0 +1,112 @@
+[
+  {
+    "id": "bike-1",
+    "category": "bike",
+    "name": "Royal Enfield Hunter 350",
+    "specs": "349cc Engine | 20.2 bhp | Dual Channel ABS",
+    "price": "₹1,49,900",
+    "rawPrice": 149900,
+    "image": "/images/bike_card.jpg",
+    "tag": "Top Seller",
+    "inStock": true
+  },
+  {
+    "id": "bike-2",
+    "category": "bike",
+    "name": "Honda Activa 6G Premium",
+    "specs": "109.5cc | eSP Technology | 47 kmpl | Telescopic Suspension",
+    "price": "₹82,400",
+    "rawPrice": 82400,
+    "image": "/images/bike_card.jpg",
+    "tag": "Best Daily Commuter",
+    "inStock": true
+  },
+  {
+    "id": "bike-3",
+    "category": "bike",
+    "name": "Yamaha MT-15 V2",
+    "specs": "155cc Liquid-cooled | 18.4 PS | Variable Valve Actuation",
+    "price": "₹1,68,000",
+    "rawPrice": 168000,
+    "image": "/images/bike_card.jpg",
+    "tag": "Performance Pick",
+    "inStock": true
+  },
+  {
+    "id": "car-1",
+    "category": "car",
+    "name": "Mercedes-Benz GLC / Luxury SUV",
+    "specs": "All-Wheel Drive | Panaromic Roof | Digital Cockpit",
+    "price": "₹74,20,000",
+    "rawPrice": 7420000,
+    "image": "/images/car_card.jpg",
+    "tag": "Luxury Class",
+    "inStock": true
+  },
+  {
+    "id": "car-2",
+    "category": "car",
+    "name": "Tata Nexon Smart+ Petrol",
+    "specs": "Global NCAP 5-Star | 1.2L Turbo | Touchscreen Audio",
+    "price": "₹8,99,000",
+    "rawPrice": 899000,
+    "image": "/images/car_card.jpg",
+    "tag": "Best Value SUV",
+    "inStock": true
+  },
+  {
+    "id": "car-3",
+    "category": "car",
+    "name": "Maruti Suzuki Swift ZXi",
+    "specs": "1.2L DualJet Petrol | 24.8 kmpl | SmartPlay Pro+",
+    "price": "₹7,65,000",
+    "rawPrice": 765000,
+    "image": "/images/car_card.jpg",
+    "tag": "Economical Pick",
+    "inStock": true
+  },
+  {
+    "id": "laptop-1",
+    "category": "laptop",
+    "name": "Apple MacBook Air M2 / Pro",
+    "specs": "M2 Chip | 8GB / 16GB RAM | Liquid Retina Display",
+    "price": "₹89,900",
+    "rawPrice": 89900,
+    "image": "/images/laptop_card.jpg",
+    "tag": "Work & Student",
+    "inStock": true
+  },
+  {
+    "id": "laptop-2",
+    "category": "laptop",
+    "name": "Lenovo ThinkPad E14 Gen 5",
+    "specs": "Intel Core i5 13th Gen | 16GB RAM | 512GB SSD",
+    "price": "₹64,500",
+    "rawPrice": 64500,
+    "image": "/images/laptop_card.jpg",
+    "tag": "Business Pick",
+    "inStock": true
+  },
+  {
+    "id": "mobile-1",
+    "category": "mobile",
+    "name": "iPhone 15 & 15 Pro Max",
+    "specs": "Dynamic Island | 48MP Pro Camera | USB-C Port",
+    "price": "₹69,900",
+    "rawPrice": 69900,
+    "image": "/images/mobile_card.jpg",
+    "tag": "Trending Flagship",
+    "inStock": true
+  },
+  {
+    "id": "mobile-2",
+    "category": "mobile",
+    "name": "Samsung Galaxy S24 5G",
+    "specs": "Galaxy AI | 50MP Pro Camera | 120Hz Dynamic AMOLED",
+    "price": "₹74,999",
+    "rawPrice": 74999,
+    "image": "/images/mobile_card.jpg",
+    "tag": "AI Flagship",
+    "inStock": true
+  }
+]

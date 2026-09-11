@@ -1,69 +1,76 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import React, { useState } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import TrustStrip from "@/components/TrustStrip";
+import FinanceCategories from "@/components/FinanceCategories";
+import ProductMarketplace from "@/components/ProductMarketplace";
+import HowItWorks from "@/components/HowItWorks";
+import DocumentsRequired from "@/components/DocumentsRequired";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import CtaBanner from "@/components/CtaBanner";
+import Footer from "@/components/Footer";
+import WhatsAppFloating from "@/components/WhatsAppFloating";
+import ApplicationModal from "@/components/ApplicationModal";
 
 export default function Home() {
+  const [isApplyModalOpen, setIsApplyModalOpen] = useState(false);
+  const [modalInitialData, setModalInitialData] = useState({});
+
+  const handleOpenApply = (category = "bike", extra = {}) => {
+    setModalInitialData({
+      category,
+      ...extra,
+    });
+    setIsApplyModalOpen(true);
+  };
+
+  const handleCloseApply = () => {
+    setIsApplyModalOpen(false);
+  };
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main style={{ minHeight: "100vh", position: "relative", overflowX: "hidden" }}>
+      {/* Top Fixed Navbar */}
+      <Navbar onOpenApply={() => handleOpenApply("bike")} />
+
+      {/* Hero Section */}
+      <Hero onOpenApply={handleOpenApply} />
+
+      {/* Trust & Highlight Strip */}
+      <TrustStrip />
+
+      {/* Finance Categories */}
+      <FinanceCategories onOpenApply={handleOpenApply} />
+
+      {/* Integrated Product Marketplace */}
+      <ProductMarketplace onOpenApply={handleOpenApply} />
+
+      {/* How It Works (Simple 4-step timeline) */}
+      <HowItWorks onOpenApply={() => handleOpenApply("bike")} />
+
+      {/* Documents Required Checklist */}
+      <DocumentsRequired onOpenApply={() => handleOpenApply("bike")} />
+
+      {/* Why Choose SH Capital? */}
+      <WhyChooseUs />
+
+      {/* Main Bottom CTA Banner */}
+      <CtaBanner onOpenApply={() => handleOpenApply("bike")} />
+
+      {/* Comprehensive Footer */}
+      <Footer onOpenApply={() => handleOpenApply("bike")} />
+
+      {/* 24/7 WhatsApp Floating Button */}
+      <WhatsAppFloating />
+
+      {/* 4-Step Interactive Finance Application Modal */}
+      <ApplicationModal
+        isOpen={isApplyModalOpen}
+        onClose={handleCloseApply}
+        initialData={modalInitialData}
+      />
+    </main>
   );
 }
