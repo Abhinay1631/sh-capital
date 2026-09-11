@@ -2,6 +2,9 @@
   publish = "out"
   command = "npm run build"
 
+[context.production.environment]
+  NETLIFY_TOOLBAR = "false"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

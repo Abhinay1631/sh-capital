@@ -189,3 +189,15 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #94A3B8;
 }
+
+/* Hide Netlify Toolbar / Badge if injected */
+[data-netlify-drawer],
+#netlify-drawer,
+.netlify-drawer,
+div[class*="netlify-drawer"],
+iframe[src*="netlify"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
