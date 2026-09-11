@@ -1,11 +1,23 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowRightIcon, WhatsAppIcon } from "./Icons";
 import productsData from "@/data/products.json";
+import { fetchLiveProducts } from "@/utils/googleSheets";
 
 export default function ProductMarketplace({ onOpenApply }) {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [products, setProducts] = useState(productsData);
+  const [isLiveSynced, setIsLiveSynced] = useState(false);
+
+  useEffect(() => {
+    fetchLiveProducts(productsData).then((liveItems) => {
+      if (liveItems && liveItems.length > 0) {
+        setProducts(liveItems);
+        setIsLiveSynced(true);
+      }
+    });
+  }, []);
 
   const productBanners = [
     {
@@ -34,7 +46,6 @@ export default function ProductMarketplace({ onOpenApply }) {
     },
   ];
 
-  const products = productsData;
   const filteredProducts = activeFilter === "all" ? products : products.filter((p) => p.category === activeFilter);
 
   return (

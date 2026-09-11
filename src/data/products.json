@@ -33,28 +33,6 @@
     "inStock": true
   },
   {
-    "id": "car-1",
-    "category": "car",
-    "name": "Mercedes-Benz GLC / Luxury SUV",
-    "specs": "All-Wheel Drive | Panaromic Roof | Digital Cockpit",
-    "price": "₹74,20,000",
-    "rawPrice": 7420000,
-    "image": "/images/car_card.jpg",
-    "tag": "Luxury Class",
-    "inStock": true
-  },
-  {
-    "id": "car-2",
-    "category": "car",
-    "name": "Tata Nexon Smart+ Petrol",
-    "specs": "Global NCAP 5-Star | 1.2L Turbo | Touchscreen Audio",
-    "price": "₹8,99,000",
-    "rawPrice": 899000,
-    "image": "/images/car_card.jpg",
-    "tag": "Best Value SUV",
-    "inStock": true
-  },
-  {
     "id": "car-3",
     "category": "car",
     "name": "Maruti Suzuki Swift ZXi",
