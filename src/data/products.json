@@ -24,6 +24,17 @@
   {
     "id": "bike-3",
     "category": "bike",
+    "name": "Bajaj Pulsar 150",
+    "specs": "150cc | 45 Kmpl",
+    "price": "₹60,000",
+    "rawPrice": 60000,
+    "image": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/pulsar-150-2025/key-features/mob/mob-safety.webp",
+    "tag": "Top Seller",
+    "inStock": true
+  },
+  {
+    "id": "bike-4",
+    "category": "bike",
     "name": "Yamaha MT-15 V2",
     "specs": "155cc Liquid-cooled | 18.4 PS | Variable Valve Actuation",
     "price": "₹1,68,000",
